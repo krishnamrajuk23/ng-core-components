@@ -1,0 +1,23 @@
+<tr>
+  <th *ngFor="let thead of theading">
+
+    <span>{{thead.title}}</span>
+
+    <!--sorting column by title-->
+    <i aria-hidden="true" 
+    *ngIf="thead.sort" 
+    [ngClass]="{'fa fa-sort-alpha-asc': sortByAlpha, 'fa fa-sort-alpha-desc': !sortByAlpha}"
+    (click)="sortByAlpha = !sortByAlpha" 
+    ></i>
+
+    <!--filter column by title-->
+    <i class="fa fa-filter" aria-hidden="true"
+    *ngIf="thead.filter"   
+    ></i>
+
+  </th>
+</tr>
+
+<tr>
+  <app-tcol></app-tcol>
+</tr>
