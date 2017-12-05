@@ -4,9 +4,10 @@
     <span>{{thead.title}}</span>
 
     <!--sorting column by title-->
-    <i aria-hidden="true" 
+    <i aria-hidden="true"
+    class="fa" 
     *ngIf="thead.sort" 
-    [ngClass]="{'fa fa-sort-alpha-asc': sortByAlpha, 'fa fa-sort-alpha-desc': !sortByAlpha}"
+    [ngClass]="{'fa-sort-alpha-asc': !sortByAlpha, 'fa-sort-alpha-desc': sortByAlpha}"
     (click)="sortByAlpha = !sortByAlpha" 
     ></i>
 

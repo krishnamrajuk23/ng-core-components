@@ -10,12 +10,26 @@ export class SmartTableComponent implements OnInit {
     {
       id:1,
       title:"Name",
-      filter: true,
+      filter: false,
       sort: true
     },
     {
       id:2,
-      title:"Gender"
+      title:"Gender",
+      filter: true,
+      sort: false
+    },
+    {
+      id:2,
+      title:"Gender",
+      filter: true,
+      sort: false
+    },
+    {
+      id:2,
+      title:"Gender",
+      filter: true,
+      sort: false
     }
   ];
 
